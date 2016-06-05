@@ -1,23 +1,12 @@
 <?php
 namespace app\index\controller;
 
-class Index
+use think\Controller;
+class Index extends Controller
 {
-    public function index()
+    public function hello($name = bipeng)
     {
-        return 'return index';
-    }
-
-    public function test()
-    {
-        return '这是个测试方法';
-    }
-    protected function hello2()
-    {
-        return '这是个protected方法';
-    }
-    private function hello3()
-    {
-        return '这是个privated方法';
+        $this->assign('name',$name);
+        return $this->fetch();
     }
 }
