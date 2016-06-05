@@ -1,12 +1,13 @@
 <?php
 namespace app\index\controller;
-
+use think\Db;
 use think\Controller;
 class Index extends Controller
 {
-    public function hello($name = 'bipeng')
+    public function index()
     {
-        $this->assign('name',$name);
+        $data = Db::name('companys')->find();
+        $this->assign('result',$data);
         return $this->fetch();
     }
 }
