@@ -19,5 +19,4 @@ return [
         ':name' => ['index/hello', ['method' => 'post']],
     ],
 
-    'blog/:id' => ['blog/get',['method' =>'get'],['id' => '\d+']],
 ];
