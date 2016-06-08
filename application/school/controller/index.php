@@ -4,7 +4,7 @@ use think\Db;
 use think\Controller;
 
 
-class index extends controller
+class Index extends controller
 {
     public function hello($name)
     {
