@@ -4,9 +4,9 @@ use think\Db;
 use think\Controller;
 class Index extends Controller
 {
-    public function index($id)
+    public function index
     {
-       return 'haole'.$id;
+       return 'haole';
     }
 }
 
