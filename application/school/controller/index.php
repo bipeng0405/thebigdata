@@ -11,3 +11,5 @@ class Index extends controller
         return '这是首页的'.$name.'页面';
     }
 }
+
+
