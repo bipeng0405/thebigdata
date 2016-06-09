@@ -1,7 +1,7 @@
 RewriteBase /public/
-RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [R]
 
-#<IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
+RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [L,R]
 
 #Options +FollowSymlinks -Multiviews
 #RewriteEngine on
@@ -9,4 +9,4 @@ RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [R]
 #RewriteCond %{REQUEST_FILENAME} !-f
 
 #RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
-#</IfModule>
+</IfModule>
