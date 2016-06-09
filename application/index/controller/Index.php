@@ -4,7 +4,7 @@ use think\Db;
 use think\Controller;
 class Index extends Controller
 {
-    public function index
+    public function index()
     {
        return 'haole';
     }
