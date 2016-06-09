@@ -4,6 +4,7 @@ Options +FollowSymlinks -Multiviews
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [R]
-RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+RewriteRule ^(.*)$ index.php?/$1 [QSA,PT]
+RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [L,R]
+
 </IfModule>
