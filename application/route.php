@@ -11,16 +11,16 @@
 // $Id$
 
 return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
-    //增加school的index
-
-    'hello/:name' => 'index/hello',
+//    '__pattern__' => [
+//        'name' => '\w+',
+//    ],
+//    '[hello]'     => [
+//        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
+//        ':name' => ['index/hello', ['method' => 'post']],
+//    ],
+//    //增加school的index
+//
+//    'hello/:name' => 'index/hello',
 
 
     'blog/:id'          =>['blog/get',['method' => 'get'],['id' => '\d+']],

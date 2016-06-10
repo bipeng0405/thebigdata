@@ -1,8 +1,7 @@
 <?php
 namespace app\index\controller;
-use think\Db;
-use think\Controller;
-class Index extends Controller
+
+class Index
 {
     public function index()
     {
@@ -10,7 +9,7 @@ class Index extends Controller
     }
 }
 
-class Blog extends Controller
+class Blog
 {
     public function get($id)
     {
