@@ -11,6 +11,10 @@ class Index
 
 class Blog
 {
+    /**
+     * @param $id
+     * @return string
+     */
     public function get($id)
     {
         return '查看id='.$id. '的内容';

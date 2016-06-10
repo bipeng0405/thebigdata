@@ -23,7 +23,7 @@ return [
 //    'hello/:name' => 'index/hello',
 
 
-    'blog/:id'          =>['blog/get',['method' => 'get'],['id' => '\d+']],
+    'blog/[:id]'          =>['blog/get',['method' => 'get'],['id' => '\d+']],
     'blog/:name'        =>['blog/read',['method' => 'get'],['name' => '\w+']],
     'blog/:year/:month' =>['blog/archive',['method' => 'get'],['year' => '\d{4}','month' => '\d{2}']],
 ];
