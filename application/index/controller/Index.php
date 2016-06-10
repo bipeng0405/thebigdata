@@ -10,7 +10,7 @@ class Index extends Controller
     }
 }
 
-class Blog
+class Blog extends Controller
 {
     public function get($id)
     {
